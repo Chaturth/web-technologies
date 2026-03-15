@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <form>
+        <h1>Job Application Form</h1>
+
+        <div>
+            <h3>Full Name:</h3>
+            <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div>
+            <h3>Date of Birth:</h3>
+            <input type="date" required>
+        </div>
+
+        <div>
+            <h3>Email Address:</h3>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+            <h3>Phone Number:</h3>
+            <input type="tel" placeholder="Enter your phone number" required>
+        </div>
+
+        <div>
+            <h3>Preferred Interview Time:</h3>
+            <input type="time">
+        </div>
+
+        <div>
+            <h3>Upload Resume:</h3>
+            <input type="file" required>
+        </div>
+
+        <div>
+            <h3>LinkedIn Profile:</h3>
+            <input type="url" placeholder="Enter your LinkedIn URL">
+        </div>
+
+        <div>
+            <h3>Position Applying For:</h3>
+            <select>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="fullstack">Full Stack Developer</option>
+                <option value="data">Data Scientist</option>
+            </select>
+        </div>
+
+        <div>
+            <h3>Skills:</h3>
+            <input type="checkbox" id="skill1" value="html">
+            <label for="skill1">HTML</label><br>
+            <input type="checkbox" id="skill2" value="css">
+            <label for="skill2">CSS</label><br>
+            <input type="checkbox" id="skill3" value="javascript">
+            <label for="skill3">JavaScript</label><br>
+            <input type="checkbox" id="skill4" value="python">
+            <label for="skill4">Python</label><br>
+            <input type="checkbox" id="skill5" value="java">
+            <label for="skill5">Java</label><br>
+        </div>
+
+        <div>
+            <h3>Experience Level:</h3>
+            <input type="range" min="0" max="10">
+            <pre><h4>Beginner          Expert</h4></pre>
+        </div>
+
+        <div>
+            <h3>Cover Letter:</h3>
+            <textarea rows="5" cols="40" placeholder="Write a short cover letter..."></textarea>
+        </div>
+
+        <br>
+        <div>
+            <input type="reset" value="Reset" onclick="alert('Form reset!')">
+            <input type="submit" value="Submit" onclick="alert('Application submitted!')">
+        </div>
+
+        <div>
+            <input type="hidden" value="Job Application Hidden Field">
+        </div>
+    </form>
+</body>
+</html>

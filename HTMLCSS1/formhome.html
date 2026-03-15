@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Metro Ticket Booking</title>
+</head>
+<body>
+    <form>
+        <h1>Namma Metro Ticket Booking</h1>
+
+        <div>
+            <h3>Passenger Name:</h3>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+            <h3>Email:</h3>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+            <h3>Mobile Number:</h3>
+            <input type="tel" placeholder="Enter your phone number" required>
+        </div>
+
+        <div>
+            <h3>Select Metro Line:</h3>
+            <select required>
+                <option value="">--Choose Line--</option>
+                <option value="purple">Purple Line (Whitefield ↔ Challaghatta)</option>
+                <option value="green">Green Line (Nagasandra ↔ Silk Institute)</option>
+                <option value="yellow">Yellow Line (RV Road ↔ Bommasandra)</option>
+                <option value="pink">Pink Line (Nagawara ↔ Kalena Agrahara)</option>
+            </select>
+        </div>
+
+        <div>
+            <h3>Boarding Station:</h3>
+            <input type="text" placeholder="Enter boarding station" required>
+        </div>
+
+        <div>
+            <h3>Destination Station:</h3>
+            <input type="text" placeholder="Enter destination station" required>
+        </div>
+
+        <div>
+            <h3>Travel Date:</h3>
+            <input type="date" required>
+        </div>
+
+        <div>
+            <h3>Travel Time:</h3>
+            <input type="time" required>
+        </div>
+
+        <div>
+            <h3>Number of Tickets:</h3>
+            <input type="number" min="1" max="10" placeholder="Enter ticket count" required>
+        </div>
+
+        <div>
+            <h3>Ticket Type:</h3>
+            <input type="radio" name="ticket" value="single" required> Single Journey
+            <input type="radio" name="ticket" value="return"> Return Journey
+        </div>
+
+        <div>
+            <h3>Payment Method:</h3>
+            <select required>
+                <option value="">--Select Payment--</option>
+                <option value="upi">UPI</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="netbanking">Net Banking</option>
+            </select>
+        </div>
+
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Book Ticket" onclick="alert('Ticket booked successfully!')">
+        </div>
+    </form>
+</body>
+</html>

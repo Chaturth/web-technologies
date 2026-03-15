@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Form</title>
+</head>
+<body>
+    <form>
+        <h1>Library Membership Form</h1>
+
+        <div>
+            <h3>Full Name:</h3>
+            <input type="text" placeholder="Enter your full name">
+        </div>
+
+        <div>
+            <h3>Membership Start Date:</h3>
+            <input type="date">
+        </div>
+
+        <div>
+            <h3>Preferred Week for Book Pickup:</h3>
+            <input type="week">
+        </div>
+
+        <div>
+            <h3>Preferred Visit Time:</h3>
+            <input type="time">
+        </div>
+
+        <div>
+            <h3>Membership Renewal Month:</h3>
+            <input type="month">
+        </div>
+
+        <div>
+            <h3>Registration Date & Time:</h3>
+            <input type="datetime-local">
+        </div>
+
+        <div>
+            <h3>Age:</h3>
+            <input type="number" placeholder="Enter your age">
+        </div>
+
+        <div>
+            <h3>Email Address:</h3>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <h3>Create Password:</h3>
+            <input type="password" placeholder="Enter password">
+        </div>
+
+        <div>
+            <h3>Mobile Number:</h3>
+            <input type="tel" placeholder="Enter your phone number">
+        </div>
+
+        <div>
+            <h3>Gender:</h3>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </div>
+
+        <div>
+            <h3>Preferred Genres:</h3>
+            <input type="checkbox" id="genre1" value="fiction">
+            <label for="genre1">Fiction</label><br>
+            <input type="checkbox" id="genre2" value="nonfiction">
+            <label for="genre2">Non-Fiction</label><br>
+            <input type="checkbox" id="genre3" value="mystery">
+            <label for="genre3">Mystery</label><br>
+            <input type="checkbox" id="genre4" value="science">
+            <label for="genre4">Science</label><br>
+            <input type="checkbox" id="genre5" value="history">
+            <label for="genre5">History</label><br>
+        </div>
+
+        <div>
+            <h3>Favorite Color Theme:</h3>
+            <input type="color">
+        </div>
+
+        <div>
+            <h3>Upload ID Proof:</h3>
+            <input type="file">
+        </div>
+
+        <div>
+            <h3>Search Books:</h3>
+            <input type="search" placeholder="Search books...">
+            <input type="button" value="Search" onclick="alert('Searching books...')">
+        </div>
+
+        <div>
+            <h3>Library Website URL:</h3>
+            <input type="url" placeholder="Enter library website URL">
+        </div>
+
+        <div>
+            <h3>Reading Level:</h3>
+            <input type="range" min="0" max="100">
+            <pre><h4>Beginner          Advanced</h4></pre>
+        </div>
+
+        <br><br>
+        <div>
+            <input type="reset" value="Reset" onclick="alert('Form reset!')">
+            <input type="button" value="Submit" onclick="alert('Membership submitted!')">
+        </div>
+
+        <div>
+            <input type="hidden" value="Library Membership Hidden Field">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Appointment Form</title>
+</head>
+<body>
+    <form>
+        <h1>Medical Appointment Form</h1>
+
+        <div>
+            <h3>Patient Name:</h3>
+            <input type="text" placeholder="Enter your full name">
+        </div>
+
+        <div>
+            <h3>Appointment Date:</h3>
+            <input type="date">
+        </div>
+
+        <div>
+            <h3>Preferred Week:</h3>
+            <input type="week">
+        </div>
+
+        <div>
+            <h3>Preferred Time:</h3>
+            <input type="time">
+        </div>
+
+        <div>
+            <h3>Follow-up Month:</h3>
+            <input type="month">
+        </div>
+
+        <div>
+            <h3>Booking Date & Time:</h3>
+            <input type="datetime-local">
+        </div>
+
+        <div>
+            <h3>Age:</h3>
+            <input type="number" placeholder="Enter your age">
+        </div>
+
+        <div>
+            <h3>Email Address:</h3>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <h3>Create Password for Patient Portal:</h3>
+            <input type="password" placeholder="Enter password">
+        </div>
+
+        <div>
+            <h3>Contact Number:</h3>
+            <input type="tel" placeholder="Enter your phone number">
+        </div>
+
+        <div>
+            <h3>Gender:</h3>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </div>
+
+        <div>
+            <h3>Reason for Appointment:</h3>
+            <input type="checkbox" id="reason1" value="general">
+            <label for="reason1">General Checkup</label><br>
+            <input type="checkbox" id="reason2" value="dental">
+            <label for="reason2">Dental</label><br>
+            <input type="checkbox" id="reason3" value="eye">
+            <label for="reason3">Eye Care</label><br>
+            <input type="checkbox" id="reason4" value="cardio">
+            <label for="reason4">Cardiology</label><br>
+            <input type="checkbox" id="reason5" value="ortho">
+            <label for="reason5">Orthopedic</label><br>
+        </div>
+
+        <div>
+            <h3>Preferred Color Theme for Portal:</h3>
+            <input type="color">
+        </div>
+
+        <div>
+            <h3>Upload Medical Reports:</h3>
+            <input type="file">
+        </div>
+
+        <div>
+            <h3>Search Doctors:</h3>
+            <input type="search" placeholder="Search doctors...">
+            <input type="button" value="Search" onclick="alert('Searching doctors...')">
+        </div>
+
+        <div>
+            <h3>Hospital Website URL:</h3>
+            <input type="url" placeholder="Enter hospital website URL">
+        </div>
+
+        <div>
+            <h3>Pain Level:</h3>
+            <input type="range" min="0" max="10">
+            <pre><h4>No Pain          
+        </div>
+
+        <br><br>
+        <div>
+            <input type="reset" value="Reset" onclick="alert('Form reset!')">
+            <input type="button" value="Submit" onclick="alert('Appointment submitted!')">
+        </div>
+
+        <div>
+            <input type="hidden" value="Medical Appointment Hidden Field">
+        </div>
+    </form>
+</body>
+</html>

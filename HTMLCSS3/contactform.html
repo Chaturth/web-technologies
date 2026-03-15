@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <form>
+        <h1>Travel Booking Form</h1>
+
+        <div>
+            <h3>Full Name:</h3>
+            <input type="text" placeholder="Enter your full name">
+        </div>
+
+        <div>
+            <h3>Departure Date:</h3>
+            <input type="date">
+        </div>
+
+        <div>
+            <h3>Return Week:</h3>
+            <input type="week">
+        </div>
+
+        <div>
+            <h3>Preferred Departure Time:</h3>
+            <input type="time">
+        </div>
+
+        <div>
+            <h3>Travel Month:</h3>
+            <input type="month">
+        </div>
+
+        <div>
+            <h3>Booking Date & Time:</h3>
+            <input type="datetime-local">
+        </div>
+
+        <div>
+            <h3>Number of Travelers:</h3>
+            <input type="number" placeholder="Enter number of people">
+        </div>
+
+        <div>
+            <h3>Email Address:</h3>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <h3>Create Password for Account:</h3>
+            <input type="password" placeholder="Enter password">
+        </div>
+
+        <div>
+            <h3>Contact Number:</h3>
+            <input type="tel" placeholder="Enter your phone number">
+        </div>
+
+        <div>
+            <h3>Travel Class:</h3>
+            <input type="radio" name="class" value="economy">Economy
+            <input type="radio" name="class" value="business">Business
+            <input type="radio" name="class" value="first">First Class
+        </div>
+
+        <div>
+            <h3>Choose Destinations:</h3>
+            <input type="checkbox" id="dest1" value="paris">
+            <label for="dest1">Paris</label><br>
+            <input type="checkbox" id="dest2" value="newyork">
+            <label for="dest2">New York</label><br>
+            <input type="checkbox" id="dest3" value="tokyo">
+            <label for="dest3">Tokyo</label><br>
+            <input type="checkbox" id="dest4" value="dubai">
+            <label for="dest4">Dubai</label><br>
+            <input type="checkbox" id="dest5" value="sydney">
+            <label for="dest5">Sydney</label><br>
+        </div>
+
+        <div>
+            <h3>Favorite Travel Color Theme:</h3>
+            <input type="color">
+        </div>
+
+        <div>
+            <h3>Upload Passport Copy:</h3>
+            <input type="file">
+        </div>
+
+        <div>
+            <h3>Search Flights:</h3>
+            <input type="search" placeholder="Search flights...">
+            <input type="button" value="Search" onclick="alert('Searching flights...')">
+        </div>
+
+        <div>
+            <h3>Travel Agency Website:</h3>
+            <input type="url" placeholder="Enter agency website URL">
+        </div>
+
+        <div>
+            <h3>Budget Range:</h3>
+            <input type="range" min="0" max="10000">
+            <pre><h4>Low Budget          Luxury</h4></pre>
+        </div>
+
+        <br><br>
+        <div>
+            <input type="reset" value="Reset" onclick="alert('Form reset!')">
+            <input type="button" value="Submit" onclick="alert('Booking submitted!')">
+        </div>
+
+        <div>
+            <input type="hidden" value="Travel Booking Hidden Field">
+        </div>
+    </form>
+</body>
+</html>

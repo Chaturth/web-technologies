@@ -1,14 +1,118 @@
-<div id="live"></div>
-<button type="button" class="btn primary" id="liveAlertBtn">Show live alert</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap-Lite Demo</title>
+  <style>
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      padding: 0.375rem 0.75rem;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+    .btn-primary { color: #fff; background-color: #0d6efd; border-color: #0d6efd; }
+    .btn-success { color: #fff; background-color: #198754; border-color: #198754; }
+    .btn-danger { color: #fff; background-color: #dc3545; border-color: #dc3545; }
 
-<button type="button" class="btn btn-primary">
-  Notifications <span class="badge text-bg-secondary">4</span>
-</button>
+    /* Navbar */
+    .navbar { display: flex; align-items: center; padding: 0.5rem 1rem; }
+    .navbar-dark { background-color: #212529; }
+    .navbar-brand { color: #fff; font-weight: bold; text-decoration: none; margin-right: 1rem; }
+    .navbar-nav { display: flex; list-style: none; padding-left: 0; margin-bottom: 0; }
+    .nav-link { color: #fff; text-decoration: none; padding: 0.5rem; }
+    .nav-link:hover { color: #0d6efd; }
 
-<button type="button" class="btn btn-primary position-relative">
-  Inbox
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-</button>
+    /* Grid System */
+    .container { width: 100%; margin: 0 auto; padding: 1rem; }
+    .row { display: flex; flex-wrap: wrap; }
+    .col { flex: 1; padding: 1rem; }
+
+    /* Card */
+    .card { border: 1px solid #ddd; border-radius: 0.25rem; overflow: hidden; margin: 1rem 0; width: 18rem; }
+    .card-img-top { width: 100%; display: block; }
+    .card-body { padding: 1rem; }
+    .card-title { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    .card-text { margin-bottom: 1rem; }
+
+    /* Modal (simplified) */
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+    .modal-dialog { position: relative; margin: 10% auto; max-width: 500px; }
+    .modal-content { background: #fff; border-radius: 0.25rem; padding: 1rem; }
+    .modal-header, .modal-footer { display: flex; justify-content: space-between; align-items: center; }
+    .modal-title { font-size: 1.25rem; }
+    .btn-close { background: none; border: none; font-size: 1.25rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark">
+  <a class="navbar-brand" href="#">DemoSite</a>
+  <ul class="navbar-nav">
+    <li><a class="nav-link" href="#">Home</a></li>
+    <li><a class="nav-link" href="#">Features</a></li>
+    <li><a class="nav-link" href="#">Pricing</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <!-- Buttons -->
+  <h2>Buttons</h2>
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Danger</button>
+
+  <!-- Grid -->
+  <h2>Grid System</h2>
+  <div class="row">
+    <div class="col" style="background:#0d6efd; color:#fff;">Column 1</div>
+    <div class="col" style="background:#198754; color:#fff;">Column 2</div>
+    <div class="col" style="background:#dc3545; color:#fff;">Column 3</div>
+  </div>
+
+  <!-- Card -->
+  <h2>Card</h2>
+  <div class="card">
+    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card Title</h5>
+      <p class="card-text">This is a simple card with text and a button.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <!-- Modal Trigger -->
+  <h2>Modal</h2>
+  <button class="btn btn-primary" onclick="document.getElementById('exampleModal').style.display='block'">
+    Launch Modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal" id="exampleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Hello Bootstrap-Lite!</h5>
+          <button type="button" class="btn-close" onclick="document.getElementById('exampleModal').style.display='none'">&times;</button>
+        </div>
+        <div class="modal-body">
+          This is a simplified modal example without Bootstrap JS.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" onclick="document.getElementById('exampleModal').style.display='none'">Close</button>
+          <button class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

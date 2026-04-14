@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="new.js"></script>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form name="registrationform" onsubmit="return validate()">
+        <div>
+            <label for="nameID">Name</label>
+            <span style="color: cadetblue;">*</span>
+            <span>:</span>
+            <input type="text" name="nameofName" id="nameID" required/>
+        </div>
+        <br>
+        <div>
+            <label for="emailId">Email</label>
+            <span style="color: aqua;">*</span>
+            <span>:</span>
+            <input type="text" name="nameofEmail" id="emailId" required/>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>
+
